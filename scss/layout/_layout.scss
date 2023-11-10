@@ -1,0 +1,84 @@
+// Default Box Model
+@mixin BoxModel(
+  $w: null,
+  $h: null,
+  $position: null,
+  $maxW: null,
+  $minW: null,
+  $maxH: null,
+  $minH: null
+) {
+  width: $w;
+  height: $h;
+  position: $position;
+
+  min-width: $minW;
+  max-width: $maxW;
+  min-height: $minH;
+  max-height: $maxH;
+}
+
+// Flex Box Model
+@mixin FlexBoxModel(
+  $d,
+  $justify: null,
+  $align: null,
+  $direction: row,
+  $isWrap: nowrap,
+  $gap: null
+) {
+  display: $d;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $isWrap;
+  gap: $gap;
+}
+
+// Grid Box Model
+@mixin GridBoxModel($flow: null, $columns: null, $size: null, $gap: null) {
+  grid-auto-flow: $flow;
+  grid-template-columns: repeat($columns, minmax($size, 1fr));
+  gap: $gap;
+}
+
+// position
+@mixin Position($t: null, $r: null, $b: null, $l: null) {
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+
+// margin
+@mixin Margin($t: null, $r: null, $b: null, $l: null) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+// padding
+@mixin Padding($t: null, $r: null, $b: null, $l: null) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+
+// border
+@mixin Border($type: null, $style: null, $radius: null) {
+  @if $type == 'bottom' {
+    border-bottom: $style;
+  } @else if $type == 'top' {
+    border-top: $style;
+  } @else if $type == 'left' {
+    border-left: $style;
+  } @else if $type == 'right' {
+    border-right: $style;
+  } @else if $type == 'all' {
+    border: $style;
+  }
+
+  border-radius: $radius;
+}

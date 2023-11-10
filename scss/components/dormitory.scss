@@ -1,0 +1,115 @@
+@import '../mixin';
+
+.dormitory {
+  @include BoxModel($w: 100%, $minH: fit-content);
+  &__content {
+    display: grid;
+    @include DormitoryContent;
+  }
+  &__item {
+    cursor: pointer;
+
+    @for $index from 1 through $totalThumbnailSize {
+      @include DormitoryThumbnail($index);
+    }
+
+    &:hover .dormitory__thumbnail::before {
+      content: '\f054';
+      @include FontAwesomeKit;
+      opacity: 1;
+    }
+    // Thumbnail
+    .dormitory__thumbnail {
+      @include BoxModel($w: 100%, $h: 320px, $position: relative);
+      @include Margin($b: 15px);
+      @include Border($radius: 10px);
+
+      &::after {
+        content: '\f004';
+        @include BoxModel($position: absolute);
+        @include Position($t: 15px, $r: 20px);
+        @include FontAwesomeKit($weight: 400);
+        @include Font($size: 25px, $color: #fff);
+        // Style
+        filter: drop-shadow(0px 5px 5px #000000a8);
+      }
+
+      &::before {
+        content: '\f054';
+        @include FontAwesomeKit;
+        @include BoxModel($w: 32px, $h: 32px, $position: absolute);
+        @include Position($t: 50%, $r: 7%);
+        @include Border($radius: 50%);
+
+        // Style
+        transform: translateY(-50%);
+        line-height: 32px;
+        text-align: center;
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.9);
+        filter: drop-shadow(0px 5px 5px #000000a8);
+        transition: 0.3s;
+        opacity: 0;
+      }
+    }
+
+    // Information
+    .dormitory__info {
+      &__detail {
+        @include FlexBoxModel($d: flex, $justify: space-between);
+        @include Margin($b: 10px);
+        .dormitory__features {
+          color: #737373;
+        }
+
+        .dormitory__features div:first-child {
+          @include Font($weight: 600, $color: #000);
+        }
+
+        .dormitory__rating {
+          & > i {
+            font-size: 12px;
+          }
+          & span {
+            font-size: 15px;
+          }
+        }
+      }
+      &__price {
+        & span:first-child {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .dormitory__more {
+    @include BoxModel($h: 300px);
+    @include FlexBoxModel($d: flex, $justify: center, $align: center);
+
+    &__content {
+      @include FlexBoxModel(
+        $d: flex,
+        $direction: column,
+        $justify: center,
+        $align: center,
+        $gap: 15px
+      );
+
+      .dormitory__more__title {
+        @include Font($size: 23px, $weight: 600);
+      }
+
+      .dormitory__more__button {
+        @include BoxModel($w: 100px, $h: 50px);
+        @include Font($size: 17px, $color: #fff);
+        @include Border($radius: 10px);
+        @include InitButton(#222222);
+
+        &:hover {
+          background-color: #000;
+        }
+      }
+    }
+  }
+}

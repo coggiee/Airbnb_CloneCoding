@@ -1,0 +1,27 @@
+// For Initializing body
+@mixin InitBody {
+  body {
+    @include BoxModel($w: 100vw, $h: 100vh, $position: null);
+    @include Margin($t: 0, $r: 0, $b: 0, $l: 0);
+    @include Padding($t: 0, $r: 0, $b: 0, $l: 0);
+    @include Font($size: 16px, $color: #333);
+
+    background: #fff;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+}
+
+@mixin InitAnchor {
+  a {
+    text-decoration: none;
+    color: #909090;
+  }
+}
+
+// For Initializing button
+@mixin InitButton($bgc: null) {
+  border: none;
+  background-color: $bgc or inherit;
+  cursor: pointer;
+}

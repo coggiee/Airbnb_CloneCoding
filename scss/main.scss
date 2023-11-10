@@ -1,0 +1,37 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap');
+@import './variables/variables';
+@import './components/header';
+@import './components/navbar';
+@import './components/dormitory';
+@import './components/footer';
+@import 'mixin';
+@import './init/init';
+@import './layout/layout';
+@import './font/font';
+
+// Initializing body, a
+@include InitBody;
+@include InitAnchor;
+
+// Container (as Root Element)
+.container {
+  @include BoxModel($w: 100%, $h: 100%, $position: relative);
+  overflow-y: auto; /* 스크롤이 가능하도록 설정 */
+}
+
+// Section (containing dormitory)
+.section {
+  @include BoxModel($h: fit-content, $position: relative);
+  .section__content {
+    @include BoxModel($h: 100%, $position: relative);
+    @include FlexBoxModel(
+      flex,
+      $justify: null,
+      $align: center,
+      $direction: column,
+      $gap: null
+    );
+    @include Padding($l: $section-padding-x, $r: $section-padding-x);
+  }
+}

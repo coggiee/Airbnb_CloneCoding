@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Keywords" content="Airbnb">
+  <meta name="Keywords" content="airbnb">
+  <meta name="Keywords" content="Airbnb clonecoding">
+  <meta name="Keywords" content="airbnb clonecoding">
+  <meta property="og:title" content="Airbnb CloneCoding" />
+  <meta property="og:description" content="에어비앤비 클론코딩 in SCSS" />
+  <meta property="og:image" content="https://news.airbnb.com/wp-content/uploads/sites/4/2021/10/Airbnb-Logo-1.jpg?w=2163" />
+  <meta name="twitter:card" content="card" />
+  <meta property="twitter:image" content="https://news.airbnb.com/wp-content/uploads/sites/4/2021/10/Airbnb-Logo-1.jpg?w=2163">
+  <meta property="twitter:title" content="Airbnb CloneCoidng">
+  <meta property="twitter:description" content="에어비앤비 클론코딩 in SCSS">
+  <meta property="" content="">
+  <title>Airbnb</title>
+  <link rel="stylesheet" href="scss/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content">
+        <!-- Logo -->
+        <a href="#" class="header__logo header__item">
+          <div class="header__logo__content">
+            <i class="fa-brands fa-airbnb"></i>
+            <span class="header__logo__title">airbnb</span>
+          </div>
+        </a>
+        <!-- Middle Tab Bar -->
+        <div class="header__tab header__item">
+          <div class="header__tab__content">
+            <div class="header__tab__item">어디든지</div>
+            <div class="header__tab__item">언제든 일주일</div>
+            <div class="header__tab__item">
+              <p class="header__tab__item__text">게스트 추가</p>
+              <button class="header__tab__item__button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right SubTab Bar -->
+        <div class="header__subtab header__item">
+          <div class="header__subtab__content">
+            <div class="header__subtab__hosting">
+              당신의 공간을 에어비앤비하세요
+            </div>
+            <div class="header__subtab__lang">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+          </div>
+          <div class="header__subtab__content">
+            <button class="header__subtab__button">
+              <div class="header__subtab__menu">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="header__subtab__user">
+                <i class="fa-solid fa-circle-user"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar__content">
+        <!-- Slider -->
+        <div class="navbar__slider">
+          <div class="navbar__slider__content">
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">한적한 시골</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">방</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">캠핑장</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">그랜드 피아노</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">열대 지역</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">최고의 전망</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">한옥</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">국립공원</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">인기 급상승</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">해변 바로 앞</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">통나무집</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">농장</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">멋진 수영장</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">기상천외한 숙소</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">료칸</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">스키</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">초소형 주택</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">호수 근처</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">트리하우스</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">캐슬</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">와인 농장</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">속세를 벗어난 숙소</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">디자인</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">유서 깊은 주택</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">상징적 도시</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">키즈</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">호숫가</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">민수</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">B&B</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">북극</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">헛간</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">창작 공간</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">신규</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">사막</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">하우스보트</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">전문가급 주방</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">A자형 주택</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">스키 타고 출입</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">Luxe</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">저택</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">담무소</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">돔하우스</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">카사 파르티쿨라르</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">세상의 꼭대기</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">복토 주택</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">섬</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">동굴</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">유르트</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">무장애</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">키클라데스 주택</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">타워</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">골프장</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">컨테이너하우스</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">서핑</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">보트</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">트룰로</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">풍차</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">리아드</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">마차</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">캠핑카</div>
+            </div>
+            <div class="navbar__item">
+              <div class="navbar__item__icon">
+              </div>
+              <div class="navbar__item__title">해변 근처</div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Filter Button -->
+        <div class="navbar__filter">
+          <div class="navbar__filter__content">
+            <div class="navbar__filter__icon">
+              <i class="fa-solid fa-arrow-down-short-wide"></i>
+            </div>
+            <div class="navbar__filter__title">필터</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__content">
+        <!-- Dormitory List -->
+        <main class="dormitory">
+          <!-- Actual Dormitory -->
+          <div class="dormitory__content">
+            <!-- Dormitory Item -->
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 서울</div>
+                    <div>산 및 정원 전망</div>
+                    <div>1월 13일~18일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.95</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩182,588 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 용산구</div>
+                    <div>도시 전망</div>
+                    <div>1월 1일~6일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.88</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩316,973 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 용산구</div>
+                    <div>3km거리</div>
+                    <div>11월 28일 ~ 12월 3일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.93</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩158,658 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 용산구</div>
+                    <div>3km 거리</div>
+                    <div>1월 4일~9일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.87</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩161,933 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 서울</div>
+                    <div>호수 및 강 전망</div>
+                    <div>11월 20일~25일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.9</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩178,024 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 용산구</div>
+                    <div>도시 전망</div>
+                    <div>12월 10일~15일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.97</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩120,965 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 이태원동, 용산구</div>
+                    <div>도시 전망</div>
+                    <div>12월 17일~22일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.83</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩180,306 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 용산구</div>
+                    <div>도시 전망</div>
+                    <div>12월 2일~7일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.85</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩172,089 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 중구</div>
+                    <div>도시 전망</div>
+                    <div>1월 27일 ~ 2월 1일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.94</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩103,000 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 마포구</div>
+                    <div>강변 전망</div>
+                    <div>11월 20일~25일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.87</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩140,697 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 중구</div>
+                    <div>도시 전망</div>
+                    <div>12월 1일~6일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.94</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩316,500 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 서울</div>
+                    <div>7km 거리</div>
+                    <div>12월 3일~8일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>5.0</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩282,555 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 용산구</div>
+                    <div>5km 거리</div>
+                    <div>11월 28일 ~ 12월 3일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.95</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩486,141 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 중구</div>
+                    <div>1km 거리</div>
+                    <div>1월 7일~12일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.92</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩95,000 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 중구</div>
+                    <div>산 및 공원 전망</div>
+                    <div>1월 13일~18일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.97</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩287,083 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 서울특별시</div>
+                    <div>도시 전망</div>
+                    <div>12월 4일~9일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.92</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩149,307 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 성북구</div>
+                    <div>도시 전망</div>
+                    <div>1월 3일~9일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.88</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩91,802 /박</div>
+              </div>
+            </div>
+
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 중구</div>
+                    <div>산 및 도심 전망</div>
+                    <div>12월 11일~16일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.98</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩169,714 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 마포구</div>
+                    <div>5km 거리</div>
+                    <div>1월 29일 ~ 2월 3일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.86</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩227,094 /박</div>
+              </div>
+            </div>
+            <div class="dormitory__item">
+              <!-- Thumbnail -->
+              <div class="dormitory__thumbnail"></div>
+              <!-- Information -->
+              <div class="dormitory__info">
+                <!-- Detail Information -->
+                <div class="dormitory__info__detail">
+                  <!-- Features -->
+                  <div class="dormitory__features">
+                    <div>한국 서울</div>
+                    <div>8km 거리</div>
+                    <div>12월 16일~23일</div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="dormitory__rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>5.0</span>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="dormitory__info__price">₩124,470 /박</div>
+              </div>
+            </div>
+          </div>
+          <!-- More Dormitory -->
+          <div class="dormitory__more">
+            <div class="dormitory__more__content">
+              <div class="dormitory__more__title">
+                최고의 전망 카테고리 계속 검색하기
+              </div>
+              <button class="dormitory__more__button">더 보기</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__recommendation">
+          <div class="footer__recommendation__content">
+            <h2 class="footer__recommendation__title">다음 여행을 위한 추천 여행지</h3>
+              <div class="footer__recommendtaion__category">
+                <ul class="footer__recommendation--list">
+                  <li class="footer__recommendation--item">인기</li>
+                  <li class="footer__recommendation--item">예술 및 문화</li>
+                  <li class="footer__recommendation--item">야외</li>
+                  <li class="footer__recommendation--item">산맥</li>
+                  <li class="footer__recommendation--item">해변</li>
+                  <li class="footer__recommendation--item">카테고리</li>
+                  <li class="footer__recommendation--item">즐길 거리</li>
+                </ul>
+                <ul class="footer__recommendation--sublist">
+                  <li class="footer__recommendation--subitem">
+                    <div>캔모어</div>
+                    <div>휴가지 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>베날마데나</div>
+                    <div>해변 근처 독채 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>마르베야</div>
+                    <div>독채 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>미하스</div>
+                    <div>아파트 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>프레스콧</div>
+                    <div>통나무집 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>스캇츠데일</div>
+                    <div>아파트 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>투손</div>
+                    <div>반려동물 동반이 허용되는 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>요스퍼</div>
+                    <div>통나무집 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>마운틴 뷰</div>
+                    <div>독채 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>Devonport</div>
+                    <div>별장 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>Mallacoota</div>
+                    <div>해변 근처 독채 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>이비자</div>
+                    <div>휴가지 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>애나하임</div>
+                    <div>가족여행에 적합한 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>몬터레이</div>
+                    <div>독채 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>파소 로블레스</div>
+                    <div>독채 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>산타바바라</div>
+                    <div>아파트 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <div>소노마</div>
+                    <div>수영장이 있는 숙소</div>
+                  </li>
+                  <li class="footer__recommendation--subitem">
+                    <button>
+                      <a href="#">
+                        더 보기
+                      </a>
+                    </button>
+                  </li>
+
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="footer__helper">
+          <div class="footer__helper__content">
+            <ul class="footer__helper--list">
+              <li class="footer__helper--item">
+                <p>에어비앤비 지원</p>
+                <ul class="footer__helper--sublist">
+                  <li class="footer__helper--subitem">
+                    <a href="#">도움말 센터</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">에어커버</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">차별 반대</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">장애인 지원</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">예약 취소 옵션</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">이웃 민원 신고</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__helper--item">
+                <p>호스팅</p>
+                <ul class="footer__helper--sublist">
+                  <li class="footer__helper--subitem">
+                    <a href="#">당신의 공간을 에어비앤비하세요</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">호스트를 위한 에어커버
+                    </a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">호스팅 자료</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">커뮤니티 포럼</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">책임감 있는 호스팅</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__helper--item">
+                <p>에어비앤비</p>
+                <ul class="footer__helper--sublist">
+                  <li class="footer__helper--subitem">
+                    <a href="#">뉴스룸</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">새로운 기능
+                    </a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">채용정보</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">투자자 정보</a>
+                  </li>
+                  <li class="footer__helper--subitem">
+                    <a href="#">Airbnb 긴급 숙소</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright__content">
+            <div class="footer__copyright__header">
+              <div class="copyright__header--left">
+                <div class="copyright--subitem">© 2023 Airbnb, Inc</div>
+                <a class="copyright--subitem" href="#">개인정보 처리방침</a>
+                <a class="copyright--subitem" href="#">이용약관</a>
+                <a class="copyright--subitem" href="#">사이트맵</a>
+                <a class="copyright--subitem" href="#">한국의 변경된 환불 정책</a>
+                <a class="copyright--subitem" href="#">회사 세부정보</a>
+              </div>
+              <div class="copyright__header--right">
+                <div class="copyright--else">
+                  <button class="language--item ln">
+                    <span><i class="fa-solid fa-globe"></i></span>
+                    <span class="language--subitem subitem">한국어(KR)</span>
+                  </button>
+                  </but>
+                  <button class="currency--item currency">
+                    <span><i class="fa-solid fa-won-sign"></i></span>
+                    <span class="currency--subitem subitem">KRW</span>
+                  </button>
+                </div>
+                <div class="copyright--social">
+                  <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                  <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-line"></i></a>
+                  <a href=""><i class="fa-brands fa-telegram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__copyright__footer">
+              웹사이트 제공자: Airbnb Ireland UC, private unlimited company, 8 Hanover Quay Dublin 2, D02 DP23 Ireland | 이사:
+              Dermot Clarke, Killian Pattwell, Andrea Finnegan | VAT 번호: IE9827384L | 사업자 등록 번호: IE 511825 | 연락처:
+              terms@airbnb.com, 웹사이트, 080-822-0230 | 호스팅 서비스 제공업체: 아마존 웹서비스 | 에어비앤비는 통신판매 중개자로 에어비앤비 플랫폼을 통하여 게스트와 호스트
+              사이에 이루어지는 통신판매의 당사자가 아닙니다. 에어비앤비 플랫폼을 통하여 예약된 숙소, 체험, 호스트 서비스에 관한 의무와 책임은 해당 서비스를 제공하는 호스트에게 있습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/17536a1336.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

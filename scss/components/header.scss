@@ -1,0 +1,192 @@
+@import '../mixin';
+@import '../layout/layout';
+@import '../init/init';
+@import '../font/font';
+
+.header {
+  @include BoxModel($w: 100%, $h: 100px, $position: sticky);
+  @include Position($t: 0);
+  @include Border($type: 'bottom', $style: 1px solid $borderColor);
+
+  // Style
+  background-color: #fff;
+  z-index: 10;
+
+  // Media
+  @media screen and (max-width: 1200px) {
+    .header__logo__title {
+      display: none;
+    }
+  }
+
+  &__content {
+    @include BoxModel($h: 100%);
+    @include Padding($l: 70px, $r: 70px);
+    @include FlexBoxModel($d: flex, $justify: stretch, $align: center);
+
+    & .header__item {
+      flex-grow: 1;
+    }
+
+    // Header Logo(Left tab)
+    & .header__logo {
+      cursor: pointer;
+
+      &__content {
+        @include BoxModel($w: 100%);
+        @include FlexBoxModel($d: flex, $align: center, $gap: 5px);
+        @include Font($size: 25px, $weight: 700, $color: $brandColor);
+
+        font-family: 'Mulish', sans-serif;
+        flex-shrink: 1;
+
+        & i {
+          font-size: 45px;
+        }
+      }
+    }
+
+    // Header Tab(Center tab)
+    & .header__tab {
+      @include BoxModel($minW: fit-content, $maxW: fit-content);
+      @include Padding($l: 20px, $r: 20px);
+      @include Font($size: 14px, $weight: 600);
+      @include Border($type: 'all', $style: 1px solid #eee, $radius: 50px);
+      // Important
+      flex-grow: 1;
+
+      // Style
+      background-color: #fff;
+      transition: 0.4s;
+      filter: drop-shadow(0px 5px 5px #84848444);
+      cursor: pointer;
+
+      &:hover {
+        filter: drop-shadow(0px 7px 7px #6e6e6e44);
+      }
+
+      &__content {
+        @include FlexBoxModel($d: flex, $align: center);
+        & .header__tab__item {
+          @include BoxModel($position: relative);
+          @include Padding($r: 20px);
+          @include Margin($r: 20px);
+
+          // IMPORTANT
+          flex-grow: 1;
+          flex-shrink: 0;
+
+          // Style
+          text-align: center;
+
+          &::after {
+            content: '';
+            @include BoxModel($h: 100%, $position: absolute);
+            @include Position($r: 0);
+            @include Border($type: 'right', $style: 1px solid #ccc);
+          }
+        }
+        & .header__tab__item:last-child {
+          @include FlexBoxModel(
+            $d: flex,
+            $justify: center,
+            $align: center,
+            $gap: 10px
+          );
+          @include Margin($r: 0);
+          @include Padding($r: 0);
+          @include Border($type: 'right', $style: none);
+          @include Font($color: #a2a2a2);
+
+          &::after {
+            content: '';
+            @include Border($type: 'right', $style: none);
+          }
+          & .header__tab__item__button {
+            @include BoxModel($w: 30px, $h: 30px);
+            @include Border($type: 'all', $style: none, $radius: 50%);
+            @include Font($color: #fff);
+            // Style
+            @include InitButton($brandColor);
+          }
+        }
+      }
+    }
+
+    // Header Subtab(Right tab)
+    .header__subtab {
+      @include FlexBoxModel(
+        $d: flex,
+        $justify: end,
+        $align: center,
+        $gap: 10px
+      );
+      &__content {
+        // justify-content: flex-end;
+        &:first-child {
+          @include FlexBoxModel(
+            $d: flex,
+            $justify: space-between,
+            $align: center,
+            $gap: 10px
+          );
+          & .header__subtab__hosting {
+            @include Padding($t: 15px, $b: 15px, $l: 15px, $r: 15px);
+            @include Font($size: 14px, $weight: 600);
+            @include Border($radius: 50px);
+
+            // Style
+            cursor: pointer;
+
+            &:hover {
+              background-color: #f5f5f5;
+            }
+            @media screen and (max-width: 1200px) {
+              display: none;
+            }
+          }
+
+          & .header__subtab__lang {
+            @include Padding($t: 15px, $b: 15px, $l: 15px, $r: 15px);
+            @include Border($radius: 50%);
+
+            // Style
+            cursor: pointer;
+
+            &:hover {
+              background-color: #f5f5f5;
+            }
+          }
+        }
+
+        &:last-child {
+          // Style
+          transition: 0.4s;
+          &:hover {
+            filter: drop-shadow(0px 5px 5px #84848444);
+          }
+          & .header__subtab__button {
+            @include FlexBoxModel(
+              $d: flex,
+              $justify: center,
+              $align: center,
+              $gap: 15px
+            );
+            @include InitButton(#fff);
+            @include Padding($t: 5px, $b: 5px, $l: 15px, $r: 15px);
+            @include Font($size: 15px, $color: #333);
+            @include Border(
+              $type: 'all',
+              $style: 1px solid #25252525,
+              $radius: 50px
+            );
+
+            & .header__subtab__user {
+              @include Font($size: 33px, $color: #777777);
+            }
+          }
+        }
+      }
+    }
+  }
+}

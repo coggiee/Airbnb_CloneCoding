@@ -1,0 +1,245 @@
+@use '../variables/variables' as VAR;
+@import '../mixin';
+@import '../layout/layout';
+
+.footer {
+  @include BoxModel($w: 100%, $h: fit-content);
+  background-color: rgb(247, 247, 247);
+
+  &__content {
+    @include BoxModel($h: 100%);
+  }
+  &__recommendation {
+    @include Border($type: bottom, $style: 1px solid #a6a6a6c4);
+
+    &__title {
+      @include Margin($t: 0);
+      @include Font($size: 22px, $weight: 600);
+    }
+
+    &__content {
+      @include FlexBoxModel($d: flex, $direction: column);
+      @include Padding(
+        $t: 70px,
+        $b: 70px,
+        $l: $section-padding-x,
+        $r: $section-padding-x
+      );
+    }
+
+    &__category {
+      height: fit-content;
+    }
+
+    &--list {
+      @include FlexBoxModel(
+        $d: flex,
+        $justify: start,
+        $align: center,
+        $gap: 30px
+      );
+      @include Margin($t: 0, $b: 40px, $l: 0, $r: 0);
+      @include Padding($t: 0, $b: 0, $l: 0, $r: 0);
+      @include Border($type: bottom, $style: 1px solid #a6a6a6c4);
+
+      // Style
+      list-style: none;
+
+      li {
+        @include Padding($b: 18px);
+        @include Font($size: 14px, $color: VAR.$unactive-color);
+
+        // Style
+        cursor: pointer;
+        &:first-child {
+          @include Font($color: VAR.$active-color);
+          @include Border($type: bottom, $style: 2px solid #000);
+        }
+      }
+    }
+
+    &--sublist {
+      display: grid;
+
+      @include GridBoxModel(
+        $flow: row dense,
+        $columns: auto-fit,
+        $size: 193px,
+        $gap: 30px 5px
+      );
+      @include BoxModel($h: fit-content);
+
+      // for ul
+      list-style: none;
+      @include Margin($t: 0, $b: 0, $l: 0, $r: 0);
+      @include Padding($t: 0, $b: 0, $l: 0, $r: 0);
+
+      & .footer__recommendation--subitem {
+        cursor: pointer;
+        & div {
+          @include Font($size: 14px);
+        }
+
+        & div:first-child {
+          @include Font($color: VAR.$active-color);
+        }
+
+        & div:last-child {
+          @include Font($color: VAR.$unactive-color);
+        }
+
+        &:last-child {
+          // For Button
+          & button {
+            @include FlexBoxModel($d: flex, $align: center, $gap: 5px);
+            @include Padding($t: 0, $b: 0, $l: 0, $r: 0);
+            @include InitButton; // 버튼 초기 스타일
+
+            a {
+              @include Font($color: VAR.$active-color);
+
+              // Hover Style for <a>
+              &:hover {
+                text-decoration: underline;
+              }
+              &::after {
+                content: '\f078';
+                @include FontAwesomeKit;
+              }
+            }
+
+            i {
+              @include Font($size: 10px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer__helper {
+    // padding-bottom: 30px;
+    // border-bottom: 1px solid #a6a6a6c4;
+
+    ul {
+      @include Margin($t: 0, $b: 0, $l: 0, $r: 0);
+      @include Padding($t: 0, $b: 0, $l: 0, $r: 0);
+
+      // Style
+      list-style: none;
+    }
+    &__content {
+      @include Padding(
+        $t: 35px,
+        $b: 0,
+        $l: $section-padding-x,
+        $r: $section-padding-x
+      );
+
+      & .footer__helper--list {
+        @include BoxModel($w: 100%);
+        @include FlexBoxModel($d: flex, $justify: start, $gap: 30px);
+        @include Padding($b: 50px);
+        @include Border($type: bottom, $style: 1px solid #a6a6a6c4);
+
+        .footer__helper--item {
+          @include Font($size: 14px);
+
+          // Important
+          flex-basis: 400px;
+
+          & p {
+            @include Font($weight: 600);
+            @include Margin($b: 20px);
+          }
+          & .footer__helper--sublist {
+            @include FlexBoxModel($d: flex, $direction: column, $gap: 20px);
+            @include Font($size: 14px);
+            .footer__helper--subitem a {
+              color: #222222;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer__copyright {
+    &__content {
+      @include Padding(
+        $t: 20px,
+        $b: 30px,
+        $l: $section-padding-x,
+        $r: $section-padding-x
+      );
+    }
+    &__header {
+      @include FlexBoxModel($d: flex, $justify: space-between, $align: center);
+      @include Padding($b: 8px);
+      @include Border($type: bottom, $style: 1px solid #a6a6a6c4);
+
+      & .copyright__header--left {
+        @include FlexBoxModel($d: flex, $align: center, $gap: 10px);
+
+        & .copyright--subitem {
+          @include BoxModel($position: relative);
+          @include Margin($l: 5px);
+          @include Font($size: 14px, $color: #222222);
+
+          &:first-child:hover {
+            text-decoration: none;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &::after {
+            content: '·';
+            @include BoxModel($position: absolute);
+            @include Position($r: -10px);
+          }
+          &:last-child::after {
+            content: '';
+          }
+        }
+      }
+
+      & .copyright__header--right {
+        @include FlexBoxModel($d: flex, $align: end, $gap: 20px);
+        & .copyright--else {
+          @include FlexBoxModel($d: flex);
+          @include Font($size: 14px, $color: #222222);
+
+          & button {
+            @include FlexBoxModel($d: flex, $align: center, $gap: 7px);
+            @include Border($type: all, $style: none);
+            @include Font($size: 14px);
+            @include InitButton;
+
+            & .subitem:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        & .copyright--social {
+          @include FlexBoxModel($d: flex, $align: center, $gap: 20px);
+          @include Font($size: 18px);
+          a {
+            @include Font($color: #000);
+          }
+        }
+      }
+    }
+
+    & .footer__copyright__footer {
+      @include BoxModel($w: 100%);
+      @include Padding($t: 8px);
+      @include Font($size: 10px, $color: #717171);
+    }
+  }
+}

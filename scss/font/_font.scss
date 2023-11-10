@@ -1,0 +1,12 @@
+// Use Font Awesome 6 Free
+@mixin FontAwesomeKit($weight: 600) {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: $weight;
+}
+
+// For Font
+@mixin Font($size: null, $weight: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}

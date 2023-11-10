@@ -1,0 +1,38 @@
+@use './variables/variables' as VAR;
+
+// .navbar__item__icon
+@mixin NavItemIcon($index, $w, $h) {
+  &:nth-child(#{$index}) .navbar__item__icon {
+    @include BoxModel($w: $w, $h: $h);
+    background: #fff url(../image/navbarIcon/#{$index}.jpg) center center /
+      contain no-repeat;
+  }
+}
+
+// .dormitory__thumbnail
+@mixin DormitoryThumbnail($index) {
+  &:nth-child(#{$index}) .dormitory__thumbnail {
+    background: #fff url(../image/dormitoryThumbnail/#{$index}.jpg) center
+      center / cover no-repeat;
+  }
+}
+
+// .dormitory__content
+@mixin DormitoryContent {
+  @include GridBoxModel(
+    VAR.$dormitory-auto-flow,
+    VAR.$dormitory-content-columns,
+    VAR.$dormitory-content-min-size,
+    VAR.$dormitory-content-gap
+  );
+}
+
+// .footer__recommendation__content
+@mixin RecommendationContent {
+  @include GridBoxModel(
+    VAR.$recommendation-content-flow,
+    VAR.$recommendation-content-columns,
+    VAR.$recommendation-content-min-size,
+    VAR.$recommendation-content-gap
+  );
+}

@@ -1,0 +1,26 @@
+// Color
+$brandColor: rgba(255, 56, 92);
+$backgroundColor: #fff !default;
+$borderColor: #64646429 !default;
+$unactive-color: #717171;
+$active-color: #000;
+
+// Layout
+$section-padding-x: 70px;
+
+// Item Size
+$totalThumbnailSize: 20;
+$totalNavItemSize: 61;
+
+// Dormitory Grid Item
+$dormitory-auto-flow: row dense;
+$dormitory-content-columns: auto-fit;
+$dormitory-content-min-size: 280px;
+$dormitory-content-gap: 30px;
+
+// Recommendataion Grid Item
+
+$recommendation-content-flow: row denst;
+$recommendation-content-columns: auto-fit;
+$recommendation-content-min-size: 193px;
+$recommendation-content-gap: 30px 5px;
